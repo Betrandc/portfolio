@@ -1,0 +1,88 @@
+.contact-container{
+    align-content: start;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+
+#contact{
+    overflow-y: hidden;
+}
+.subject,.email,.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+.email-text{
+    margin-right: 5%;
+ 
+}
+.email,.subject,.message{
+    margin-bottom: 2rem;
+}
+.subject-text{
+    margin-right: 4%;
+   
+}
+.message-text{
+    margin-right: 6%;
+}
+input{
+    padding: 10px;
+    border-radius: 7px;
+    width: 25rem;
+    border: none;
+    margin-left: 5%;
+}
+
+textarea{
+    margin-left: 2%; 
+    border-radius: 7px;
+    border: none;
+    width: 25rem;
+    padding: 10px 0 0 10px;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.button{
+display: flex;
+justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container{
+        margin-top: 35%;
+    }
+
+    textarea{
+        margin-left: 0px; 
+        
+    }
+
+    textarea,input{
+        width: 70%;
+    }
+
+    .email-text{
+        margin-right: 6%;
+     
+    }
+   
+    .subject-text{
+        margin-right: 4%;
+       
+    }
+    .message-text{
+        margin-right: 4%;
+    }
+    
+}
+
+

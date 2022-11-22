@@ -1,0 +1,144 @@
+nav{
+    /* background: rgba(0,0,0,0.2); */
+    
+    border: 2px solid white;
+    width: 95%;
+    height: 4rem;
+    /* padding: 0.2rem 1.2rem; */
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 0.4rem;
+    border-radius: 3rem;
+    /* backdrop-filter: blur(15px); */
+}
+
+nav a{
+    background: transparent;
+    /* padding: 0.3rem; */
+    border-radius: 50%;
+    /* display: flex; */
+    /* color: var(--color-light); */
+    /* color:darkgray; */
+    font-size: 1.1rem;
+}
+
+nav a:hover{
+    /* background: rgba(0, 0, 0, 0.3); */
+    background: blue;
+}
+
+
+ .active{
+    background: blue;
+    border-radius: 5px;
+    padding: 0 7px;
+    /* color: white; */
+}
+
+.desktop-nav{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    position: fixed;
+}
+.home{
+    flex:5;
+    margin-left: 3rem;
+    color: white;
+    cursor: pointer;
+}
+.nav-desktop-container{
+    flex:1.5;
+    text-decoration: none;
+    display:flex;
+    
+}
+.nav-desktop-container > a >li{
+    margin-right: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:700px ) {
+.nav-mobile{
+    display: none;
+}
+.home{
+    flex:2;
+}
+.nav-desktop-container{
+    flex:1.9;
+}
+   
+}
+
+@media screen and (max-width:700px) {
+
+    .nav-mobile{
+        display: none;
+    }
+    .home{
+        flex:2;
+    }
+    .nav-desktop-container{
+        flex:2.9;
+    }
+}
+@media screen and (max-width:600px) {
+    .desktop-nav{
+        display: none;
+    }
+    a{
+        color: white;
+    }
+    .nav-mobile{
+        display: flex;
+        
+    }
+    .Icons{
+        color: white;
+        margin-left: 15px;
+    }
+    .Icons_{
+        margin-left: 20px;
+    }
+    .Icons_experience{
+        margin-left: 2.5rem;
+    }
+}
+
+
+@media screen and (min-width:900px ) {
+    .nav-mobile{
+        display: none;
+    }
+    .home{
+        flex:6;
+    }
+    .nav-desktop-container{
+        flex:2.5;
+    }
+       
+    }
+
+
+    @media screen and (min-width:1200px ) {
+        .nav-mobile{
+            display: none;
+        }
+        .home{
+            flex:6;
+        }
+        .nav-desktop-container{
+            flex:2;
+        }
+           
+        }

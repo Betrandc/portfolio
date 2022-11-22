@@ -1,0 +1,16 @@
+.headtext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-light);
+    margin-bottom: 2rem;
+    
+}
+.leftline,.rightline{
+    width: 3rem;
+    height: 3px;
+    background-color: gainsboro;
+}
+.text{
+    margin: 0 10px;
+}
